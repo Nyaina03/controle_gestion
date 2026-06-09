@@ -1,0 +1,166 @@
+/* Styles de base pour la page de tableau de bord */
+.dashboard-page {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 200px;
+  width: calc(100% - 200px);
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-content {
+  padding: 20px;
+}
+
+/* Section contenant les graphiques */
+.chart-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Ajout du wrapping pour améliorer le responsive */
+}
+
+.bar-chart, .pie-chart {
+  width: 70%;
+}
+
+/* Couleurs de fond des graphiques */
+.bar-chart canvas, .pie-chart canvas {
+  background-color: #f0f4ff; /* Fond bleu très clair */
+}
+
+/* Titre du tableau de bord */
+h2 {
+  color: #c07dad; /* Vert doux */
+  text-align: center;
+}
+
+/* Couleurs des titres des graphiques */
+.bar-chart h3, .pie-chart h3 {
+  color: #333; /* Noir doux */
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+/* Design pour les grands écrans (1280px et plus) */
+@media (min-width: 1280px) {
+  .main-content {
+    margin-left: 220px; /* Largeur de la sidebar */
+    width: calc(100% - 220px);
+    padding: 30px;
+  }
+
+  .bar-chart, .pie-chart {
+    width: 45%; /* Les graphiques prennent 45% de la largeur */
+  }
+}
+
+/* Design pour les écrans moyens (de 1024px à 1280px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .main-content {
+    margin-left: 200px; /* Largeur réduite de la sidebar */
+    width: calc(100% - 200px);
+    padding: 25px;
+  }
+
+  .bar-chart, .pie-chart {
+    width: 48%; /* Les graphiques prennent 48% de la largeur */
+  }
+}
+
+/* Design pour les écrans de tablette (768px à 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-content {
+    margin-left: 150px; /* Réduit la marge en fonction de la sidebar */
+    width: calc(100% - 150px);
+    padding: 20px;
+  }
+
+  .bar-chart, .pie-chart {
+    width: 100%; /* Les graphiques prennent 100% de la largeur sur les tablettes */
+    margin-bottom: 20px; /* Ajouter un espace entre les graphiques */
+  }
+}
+
+/* Design pour les petits écrans (480px à 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-content {
+    margin-left: 80px; /* Sidebar plus petite */
+    width: calc(100% - 80px);
+    padding: 15px;
+  }
+
+  .chart-section {
+    display: block; /* Réorganise les sections de graphiques en colonne */
+    margin-top: 15px;
+  }
+
+  .bar-chart, .pie-chart {
+    width: 100%; /* Les graphiques prennent 100% de la largeur */
+    margin-bottom: 15px; /* Ajouter un espace entre les graphiques */
+  }
+}
+
+/* Design pour les très petits écrans (moins de 480px) */
+@media (max-width: 479px) {
+  .dashboard-page {
+    display: block; /* Passe en layout vertical */
+  }
+
+  .main-content {
+    margin-left: 0; /* Supprime la marge latérale */
+    width: 100%; /* Utilise toute la largeur de l'écran */
+    padding: 10px;
+  }
+
+  .chart-section {
+    display: block; /* Réorganise les sections de graphiques en colonne */
+    margin-top: 10px;
+  }
+
+  .bar-chart, .pie-chart {
+    width: 100%; /* Les graphiques prennent 100% de la largeur */
+    margin-bottom: 10px; /* Ajouter un espace entre les graphiques */
+  }
+
+  .sidebar {
+    width: 200px;
+    left: -200px; /* Cache la sidebar par défaut */
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sidebar.active {
+    left: 0; /* Affiche la sidebar lorsqu'elle est active */
+  }
+
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 15;
+    cursor: pointer;
+    font-size: 24px;
+    color: #1a224f;
+  }
+}
+
+/* Styles généraux supplémentaires */
+.menu-toggle {
+  display: none; /* Cache le menu-toggle par défaut */
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Affiche le menu-toggle sur petits écrans */
+  }
+
+  .sidebar {
+    left: -200px; /* Sidebar cachée */
+  }
+
+  .sidebar.active {
+    left: 0; /* Sidebar affichée */
+  }
+}

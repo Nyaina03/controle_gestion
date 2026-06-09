@@ -1,0 +1,149 @@
+/* Login Container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../image/fondapmf.jpg'); /* Image de fond principale */
+  background-size: cover; /* Couvre tout l'élément */
+  background-position: center; /* Centre l'image */
+ /* background-repeat: no-repeat; /* Ne répète pas l'image */
+
+
+
+}
+
+.login-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  max-width: 90%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Input Styles */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Show Password Checkbox */
+.show-password {
+  margin-bottom: 20px;
+}
+
+.show-password input {
+  margin-right: 5px;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1a224f;/* Couleur du bouton */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.login-button:hover {
+  background-color:#608ec5; /* Couleur au survol */
+}
+
+/* Links */
+.login-links {
+  text-align: center;
+}
+
+.login-links a {
+  color: #0f7b2c;
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .login-box {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  .login-button {
+    font-size: 14px;
+  }
+}
+
+.logo {
+  width: 70px; /* Ajustez la largeur selon vos besoins */
+  margin-bottom: 10px; /* Espace entre le logo et le titre */
+  display: block; /* Assure que l'image est centrée dans son conteneur */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px; /* Espace entre les champs */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 40px; /* Ajout d'espace pour les icônes */
+    box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px; /* Ajustez la position de l'icône */
+    top: 50%;
+    transform: translateY(-50%); /* Centrer verticalement l'icône */
+    pointer-events: none; /* L'icône ne doit pas interférer avec les clics */
+    color: #4A4A4A; /* Couleur des icônes */
+}
+
+.sidebar-logo {
+  margin-bottom: 20px; /* Espacement entre le logo et le reste du menu */
+}
+
+.logo-image {
+  width: 50px; /* Ajustez la largeur selon le besoin */
+  height: auto; /* Préserve le ratio de l'image */
+  padding: 10px; /* Ajoute du padding autour de l'image */
+}
+
+.show-password label{
+  color: #0d0d0d;
+}
+
+
+

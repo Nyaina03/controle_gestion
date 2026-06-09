@@ -1,0 +1,48 @@
+
+
+
+.sidebar {
+  width: 200px; /* Largeur de la barre latérale */
+  height: 100vh; /* Hauteur de la barre latérale */
+  background-color: #1a224f; /* Couleur de fond de la barre latérale */
+  color: #ecf0f1; /* Couleur du texte */
+  position: fixed; /* Position fixe */
+  top: 0; /* Alignement en haut */
+  left: 0; /* Alignement à gauche */
+  display: flex; /* Flexbox pour la disposition */
+  flex-direction: column; /* Orientation verticale */
+  padding-top: 20px; /* Padding en haut */
+}
+
+.sidebar ul {
+  list-style-type: none; /* Supprime les puces */
+  padding: 0; /* Supprime le padding */
+  width: 100%; /* Prend toute la largeur disponible de la sidebar */
+  margin: 0; /* Supprime les marges */
+}
+
+.sidebar li {
+  margin: 10px 0; /* Espacement vertical entre les éléments */
+  width: 100%; /* Prend toute la largeur disponible */
+}
+
+.sidebar a {
+  color: #ecf0f1; /* Couleur des liens */
+  text-decoration: none; /* Supprime le soulignement */
+  padding: 10px; /* Padding autour des liens */
+  text-align: center; /* Centre le texte */
+  border-radius: 4px; /* Coins arrondis */
+  transition: background-color 0.3s; /* Transition pour l'effet de survol */
+  background-color: rgba(255, 255, 255, 0.1); /* Fond transparent */
+  display: block; /* Prend toute la largeur */
+  width: 100%; /* Occupe toute la largeur du parent */
+  box-sizing: border-box; /* Inclut le padding et la bordure */
+}
+
+.sidebar-item {
+  background-color: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
+  border-radius: 4px; /* Coins arrondis */
+  width: 100%; /* Prend la largeur du conteneur parent */
+  box-sizing: border-box; /* Assure que le padding et la bordure ne débordent pas */
+  text-align: center; /* Centre le texte */
+}

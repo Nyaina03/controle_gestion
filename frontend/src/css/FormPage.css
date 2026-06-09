@@ -1,0 +1,462 @@
+/* Style général de la page */
+.dashboard-page {
+  display: flex;
+}
+
+.main-content {
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Un gris très clair pour le fond de la page */
+  min-height: 100vh;
+}
+
+
+/* Style du conteneur de formulaire */
+.form-container {
+  background: #ffffff; /* Blanc pour un fond clair */
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  padding: 30px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: #333; /* Texte sombre pour le contraste */
+}
+
+/* Titre du formulaire */
+.form-title {
+  font-family: 'Arial', sans-serif; /* Police en accord avec le header et sidebar */
+  text-align: center;
+  color: #2b2b2b; /* Couleur sombre pour le titre */
+  margin-bottom: 30px;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Formulaire de saisie */
+.input-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.div-h2 {
+  height: 50px;
+  background-color: #f1deeb;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style des labels */
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+ /* margin-right: 500px;*/
+  color: #6a9c7e; 
+}
+
+/* Champs de saisie et sélection */
+.form-group select,
+.form-group textarea,
+.form-group input {
+  padding: 12px 10px;
+  border: 1px solid #ddd; /* Bordure gris clair */
+  border-radius: 4px;
+  background: #f0f4ff; /* Bleu très clair pour le fond des champs */
+  color: #333; /* Texte sombre */
+  font-family: 'Arial', sans-serif; /* Police uniforme */
+}
+
+/* Animation sur les champs */
+.form-group select:focus,
+.form-group input:focus {
+  outline: none;
+  border-color: #608ec5; /* Bordure active en bleu */
+  box-shadow: 0px 0px 8px rgba(96, 142, 197, 0.3); /* Effet lumineux bleu */
+}
+
+/* Conteneur des boutons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: span 2;
+  margin-top: 10px;
+}
+
+/* Style des boutons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease-in-out; /* Animation douce */
+}
+
+/* Bouton pour vider la zone */
+.clear-btn {
+  background-color: #4a90e2; /* Bleu clair */
+  color: white;
+}
+
+.clear-btn:hover {
+  background-color: #357ab8; /* Légère variation de la couleur */
+}
+
+/* Groupe des boutons de bas de page */
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  grid-column: span 2;
+  margin-top: 20px;
+  margin-left:20px;
+}
+
+/* Bouton Annuler */
+.cancel-btn {
+  background-color: transparent;
+  color: #4a90e2; /* Adapté au bleu clair */
+  border: 1px solid #4a90e2; /* Bordure correspondante */
+}
+
+.cancel-btn:hover {
+  background-color: #4a90e2; /* Changement de couleur sur survol */
+  color: white;
+}
+
+/* Bouton Enregistrer */
+.save-btn,
+.save-close-btn {
+  background-color: #ffa726; /* Orange doux */
+  color: white;
+}
+
+.save-btn:hover,
+.save-close-btn:hover {
+  background-color: #e58d1e; /* Orange plus foncé */
+}
+
+.save-close-btn {
+  background-color: #d35400; /* Orange légèrement plus sombre */
+}
+
+/* Amélioration de l'affichage du bouton Enregistrer et fermer */
+.save-close-btn:hover {
+  background-color: #c0392b; /* Accentuation lors du survol */
+}
+
+.gasynet{
+  background-color: #02972c;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.apmf{
+  background-color: #028b97;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.apmf-vas{
+  background-color: #116502;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 20px;
+
+}
+
+.button-group a {
+  text-decoration: none; /* Enlève le soulignement pour les liens */
+}
+
+
+
+
+
+/*bouton radio */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.type-label {
+  font-size: 18px;
+  
+
+
+  color: #333; /* Couleur du texte */
+  margin-bottom: 10px; /* Espacement en dessous du label */
+  margin-top: 40px;
+}
+
+.custom-radio-container {
+  background-color: #f7f9fc; /* Couleur de fond du conteneur */
+  padding: 20px; /* Espacement intérieur */
+  border-radius: 10px; /* Coins arrondis */
+  display: flex; /* Utiliser flexbox pour centrer */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+}
+
+.custom-radio-group {
+  display: flex;
+  justify-content: space-between; /* Espace entre les boutons */
+}
+
+.custom-radio {
+  position: relative; /* Nécessaire pour le pseudo-élément */
+  padding: 10px;
+  margin: 0 10px; /* Espacement entre les boutons */
+  border: 2px solid #0d0d0d; /* Bordure par défaut */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointeur au survol */
+  transition: all 0.3s; /* Animation lors du survol */
+  display: flex; /* Utiliser flexbox pour aligner les éléments */
+  align-items: center; /* Centrer verticalement */
+  width: 200px;
+}
+
+.custom-radio input {
+  margin-right: 10px; /* Espacement entre le bouton radio et le texte */
+}
+
+.custom-radio-label {
+  color: #2C3E50; /* Couleur du texte pour le label */
+  font-size: 16px;
+  font-weight: 500; /* Style de police */
+  padding: 5px; /* Espacement autour du texte du label */
+  transition: color 0.3s; /* Animation lors du survol */
+}
+
+/* Styles pour le survol et l'état sélectionné */
+.custom-radio:hover {
+  border-color: #2196F3; /* Couleur de bordure au survol */
+}
+
+.custom-radio input:checked + .custom-radio-label {
+  color: #b6afaf; /* Couleur du texte lorsque sélectionné */
+}
+
+/* Couleur des labels non cliquables */
+.custom-radio-label {
+  pointer-events: none; /* Désactiver l'interaction avec le label */
+}
+
+/* Couleurs spécifiques pour les labels */
+.custom-radio-label:nth-child(1) {
+  color: #2980B9; /* Couleur pour 'Individu' */
+}
+
+.custom-radio-label:nth-child(2) {
+  color: #8E44AD; /* Couleur pour 'Société' */
+}
+
+
+
+/*import*/
+/* Style pour le conteneur d'importation */
+.import-container {
+  background: #f0f4ff;
+  /*border-radius: 8px;*/
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Ombre plus marquée pour un effet de profondeur */
+  padding: 30px; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+  margin-top: 20px; /* Espacement en haut */
+  max-width: 600px; /* Largeur maximale */
+  margin-left: auto; /* Centrer horizontalement */
+  margin-right: auto; /* Centrer horizontalement */
+}
+
+/* Titre du conteneur d'importation */
+.import-container h3 {
+  margin-bottom: 20px; /* Espacement en bas du titre */
+  color: #2b2b2b; /* Couleur sombre pour le titre */
+  font-size: 1.5em; /* Taille de police plus grande */
+  font-weight: bold; /* Mettre le titre en gras */
+}
+
+/* Champ de sélection de fichier */
+.import-container input[type="file"] {
+  margin-bottom: 20px; /* Espacement en bas du champ de fichier */
+  padding: 12px; /* Espacement intérieur ajusté */
+  border: 2px solid #ccc; /* Bordure gris clair */
+  border-radius: 4px;
+  width: 100%; /* Largeur complète */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition pour la bordure et l'ombre */
+}
+
+/* Effet au survol du champ de fichier */
+.import-container input[type="file"]:focus {
+  border-color: #6a9c7e;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Effet lumineux au focus */
+}
+
+/* Bouton d'importation */
+.import-btn {
+  padding: 12px 25px; /* Espacement intérieur */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #6a9c7e;
+  color: white;
+  font-weight: bold; /* Mettre le texte en gras */
+  font-size: 1em; /* Taille de police ajustée */
+  transition: background-color 0.3s, transform 0.2s; /* Animation douce */
+}
+
+/* Effet au survol du bouton d'importation */
+.import-btn:hover {
+  background-color: #218838; /* Vert foncé au survol */
+  transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+
+
+
+/* Style pour les boutons de choix */
+.choix-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; /* Espacement en bas */
+  margin-top: 50px;
+}
+
+.choix-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  margin: 0 15px; /* Espacement entre les boutons */
+  transition: background-color 0.3s;
+}
+
+/* Couleur de fond pour le bouton Saisir des données */
+.choix-btn.saisie {
+  background-color: #608ec5;
+  color: white;
+}
+
+/* Effet au survol pour Saisir des données */
+.choix-btn.saisie:hover {
+  background-color: #357ab8; /* Légère variation de la couleur */
+}
+
+/* Couleur de fond pour le bouton Importer un fichier */
+.choix-btn.import {
+  background-color: #f39c12; /* Orange doux */
+  color: white;
+}
+
+/* Effet au survol pour Importer un fichier */
+.choix-btn.import:hover {
+  background-color: #e67e22; /* Légère variation de la couleur */
+}
+
+
+
+/*facture apmf all*/
+.client-dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  position: absolute;
+  background-color: white;
+  z-index: 1000;
+  width: 100%; /* Ensure it matches the input width */
+}
+
+.client-dropdown li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.client-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.readonly-field {
+  background-color: #f0f0f0; /* Couleur gris clair */
+  padding: 8px; /* Ajoutez un peu de remplissage pour un meilleur rendu */
+  border-radius: 4px; /* Arrondir les coins */
+  color: #333; /* Couleur de texte */
+}
+.readonly-field-calcul {
+  background-color: #eaddea; /* Couleur gris clair */
+  padding: 8px; /* Ajoutez un peu de remplissage pour un meilleur rendu */
+  border-radius: 4px; /* Arrondir les coins */
+  color: #333; /* Couleur de texte */
+  font-weight: bold; /* Mettre le texte en gras */
+  font-size: 18px; /* Augmenter la taille du texte */
+}
+
+
+/*co*/
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+.modal-content button {
+    margin: 10px;
+}
+
+.nb-escale{
+  width: auto;
+  height: auto;
+  background-color: #faeeee;
+  margin-left: 15px;
+}
+
+/*chargement*/
+/* spinner.css */
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #3498db; /* Couleur de la barre du cercle */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+
+
+

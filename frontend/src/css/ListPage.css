@@ -1,0 +1,54 @@
+/* Styles pour la table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse; /* Évite les espaces entre les cellules */
+}
+
+/* Styles des en-têtes */
+.data-table th {
+  background-color: #6a9c7e; /* Couleur de fond des en-têtes */
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Styles des cellules */
+.data-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Lignes paires et impaires */
+.even-row {
+  background-color:  #f0f4ff; /* Fond pour les lignes paires */
+}
+
+.odd-row {
+  background-color: #ffffff; /* Fond pour les lignes impaires */
+}
+
+/* Icônes d'action */
+.action-icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Couleurs pour les icônes de modification et suppression */
+.edit-icon {
+  color: #ffa726; /* Orange pour Modifier */
+  margin-right: 10px;
+}
+
+.delete-icon {
+  color: #d9534f; /* Rouge pour Supprimer */
+}
+
+/* Effet de survol pour les icônes */
+.edit-icon:hover {
+  color: #e58d1e;
+}
+
+.delete-icon:hover {
+  color: #c0392b;
+}

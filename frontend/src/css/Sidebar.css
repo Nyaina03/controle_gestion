@@ -1,0 +1,136 @@
+/* Sidebar conteneur */
+.sidebar {
+  width: 200px; /* Largeur fixe de la barre latérale */
+  height: 100vh; /* Hauteur totale de l'écran */
+  background-color: #1a224f;
+  color: #ecf0f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px; /* Ajoute de l'espace pour ne pas couper les éléments en bas */
+  overflow-y: auto; /* Permet le défilement vertical pour toute la sidebar */
+  box-sizing: border-box; /* Inclut le padding dans le calcul de la hauteur */
+}
+/* Personnaliser la barre de défilement de la sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 10px; /* Largeur de la barre de défilement */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #1a224f; /* Couleur de la barre de défilement */
+  border-radius: 10px; /* Coins arrondis */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #ecf0f1; /* Couleur de la piste de la barre de défilement */
+  border-radius: 10px; /* Coins arrondis */
+}
+
+/* Liste des éléments de la sidebar */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Largeur totale de la liste */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Permet aux éléments de s'empiler verticalement */
+  overflow-y: auto; /* Ajoute le défilement vertical si nécessaire */
+  flex-grow: 1; /* Permet à la liste de grandir pour occuper tout l'espace vertical disponible */
+}
+
+/* Élément de liste */
+.sidebar li {
+  margin: 10px 0;
+  width: 100%; /* Largeur totale de chaque élément */
+}
+
+/* Conteneur de chaque élément */
+.sidebar-item {
+  background-color: rgba(255, 255, 255, 0.3); /* Couleur plus claire */
+  border-radius: 4px;
+  width: calc(100% - 20px); /* Réduisez la largeur totale pour laisser de l'espace aux marges */
+  text-align: center;
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
+  padding: 10px; /* Padding interne */
+  margin-left: 10px; /* Marge à gauche */
+  margin-right: 10px; /* Marge à droite */
+}
+
+/* Liens dans la sidebar */
+.sidebar a {
+  display: block; /* Prend la largeur de son parent */
+  text-decoration: none;
+  color: #ecf0f1;
+  width: 100%; /* Largeur totale */
+  height: 100%; /* Hauteur totale */
+  padding: 10px; /* Uniformise l'espace */
+  background-color: transparent; /* Fond transparent */
+  box-sizing: border-box; /* Assurez-vous que le padding est inclus */
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Effet de survol */
+}
+
+/* Styles pour les sélections de module */
+.module-selection,
+.etat-options {
+  margin: 10px 0;
+  width: 100%; /* Largeur totale pour la sélection */
+}
+
+/* Styles pour les labels des sélections */
+label {
+  display: block; /* Assure que les labels occupent leur propre ligne */
+  margin-bottom: 5px; /* Espace entre le label et le select */
+  color: #ecf0f1; /* Couleur du texte des labels */
+  text-align: center; /* Centrer le texte du label */
+}
+
+/* Styles pour les select */
+select {
+  width: calc(100% - 20px); /* Ajuste la largeur pour correspondre aux marges */
+  padding: 10px; /* Ajoute un padding */
+  border-radius: 4px; /* Coins arrondis */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Bordure légère */
+  background-color: #fff; /* Fond blanc pour le select */
+  color: #333; /* Couleur du texte du select */
+}
+
+/* Style spécifique pour la section des recettes */
+.saisie-recette-section {
+  background-color: rgba(255, 255, 255, 0.3); /* Couleur similaire aux autres éléments */
+  border-radius: 4px;
+  margin: 10px 0; /* Marge entre les éléments */
+  padding: 10px; /* Padding interne */
+  text-align: center; /* Centrer le contenu */
+}
+
+/* Ajoutez cette classe pour centrer le contenu des sous-modules */
+.sous-module-options {
+  background-color: rgba(255, 255, 255, 0.3); /* Couleur similaire aux autres éléments */
+  border-radius: 4px;
+  margin: 10px 0; /* Marge entre les éléments */
+  padding: 10px; /* Padding interne */
+  text-align: center; /* Centrer le contenu */
+  width: calc(100% - 20px); /* Largeur totale pour correspondre aux marges */
+}
+
+/* Styles pour les sélections de module */
+.module-selection,
+.etat-options {
+  margin: 10px 0;
+  width: calc(100% - 20px); /* Ajuste la largeur pour correspondre aux marges */
+  text-align: center; /* Centre le texte à l'intérieur */
+}
+
+/* Styles pour les labels des sélections */
+label {
+  display: block; /* Assure que les labels occupent leur propre ligne */
+  margin-bottom: 5px; /* Espace entre le label et le select */
+  color: #ecf0f1; /* Couleur du texte des labels */
+  text-align: center; /* Centrer le texte du label */
+}
